@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#0f0f0f;
+    font-family:sans-serif;
+}
+
+.container {
+    width: 880px;
+}
+
+#text{
+    color:#00ffcc;
+    font-size:50px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:5px;
+
+    text-shadow:
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc,
+    0 0 40px #00ffcc;
+
+    animation: neon 1s infinite alternate;
+}
+
+@keyframes neon{
+    from{opacity:.7;}
+    to{opacity:1;}
+}
